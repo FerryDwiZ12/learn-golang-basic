@@ -46,10 +46,12 @@ func main() {
 
 
 	// make 
-	// buat array dengan panjang 5 : dan 2 itu panjangnya
+	// buat array dengan panjang 5 : dan 2 itu capacity
 	newSlice := make([]string, 2, 5)
 	newSlice[0] = "Zul"
 	newSlice[1] = "ferry"
+
+	fmt.Println("newSliceAwal :", newSlice)
 
 	var newSlice2 = newSlice[1:]
 	fmt.Println("newSlice2 :", newSlice2)
@@ -58,7 +60,7 @@ func main() {
 	fmt.Println("appendSlice2 :", appendSlice2)
 
 	fmt.Println(newSlice)
-	fmt.Println(len(newSlice))
+	fmt.Println("panjang new slice :",len(newSlice))
 	fmt.Println(cap(newSlice))
 
 
