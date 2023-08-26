@@ -1,0 +1,7 @@
+
+/*
+Comment multiline
+
+*/
+
+//single
