@@ -7,15 +7,23 @@ type Customer struct {
 	Age          int
 }
 
+func (customer Customer) sayHi(name string){
+	fmt.Println("Hello",name, "My name is", customer.Name)
+}
+
+
+
 func main() {
 	var eko Customer
-	eko.Name = "Zul"
+	eko.Name = "Eko"
 	eko.Addres = "yogyakarta"
 	eko.Age = 23
 
 	fmt.Println(eko.Name)
 	fmt.Println(eko.Addres)
 	fmt.Println(eko.Age)
+
+	eko.sayHi("Zul")
 
 
 	// struct Literals
